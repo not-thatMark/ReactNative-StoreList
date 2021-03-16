@@ -8,24 +8,24 @@ import {
   StyleSheet,
   ScrollView
 } from 'react-native';
-import FormInput from '../components/FormInput';
-import FormButton from '../components/FormButton';
-import SocialButton from '../components/SocialButton';
-import {AuthContext} from '../navigation/AuthProvider';
+import FormInput from '../components/inputForm';
+import FormButton from '../components/formButton';
+import SocialButton from '../components/socialButton';
+import {AuthContext} from '../navigation/AuthProvider.android';
 
 const LoginScreen = ({navigation}) => {
-  const [email, setEmail] = useState();
-  const [password, setPassword] = useState();
+  const [email, setEmail] = useState(null);
+  const [password, setPassword] = useState(null);
 
-  const {login, googleLogin, fbLogin} = useContext(AuthContext);
+  const {login, googleLogin,fbLogin} = useContext(AuthContext);
 
   return (
     <ScrollView contentContainerStyle={styles.container}>
       <Image
-        source={require('../assets/rn-social-logo.png')}
+        source={require('../assets/logo.png')}
         style={styles.logo}
       />
-      <Text style={styles.text}>RN Social App</Text>
+      <Text style={styles.text}>Fair Foodie</Text>
 
       <FormInput
         labelValue={email}
@@ -46,6 +46,7 @@ const LoginScreen = ({navigation}) => {
       />
 
       <FormButton
+        
         buttonTitle="Sign In"
         onPress={() => login(email, password)}
       />
@@ -78,7 +79,7 @@ const LoginScreen = ({navigation}) => {
         style={styles.forgotButton}
         onPress={() => navigation.navigate('Signup')}>
         <Text style={styles.navButtonText}>
-          Don't have an acount? Create here
+          Don't have an acount? Create one now
         </Text>
       </TouchableOpacity>
     </ScrollView>
@@ -92,7 +93,8 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     padding: 20,
-    paddingTop: 50
+    paddingTop: 50,
+    backgroundColor:'#eaad37'
   },
   logo: {
     height: 150,
@@ -100,7 +102,6 @@ const styles = StyleSheet.create({
     resizeMode: 'cover',
   },
   text: {
-    fontFamily: 'Kufam-SemiBoldItalic',
     fontSize: 28,
     marginBottom: 10,
     color: '#051d5f',
@@ -115,6 +116,5 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: '500',
     color: '#2e64e5',
-    fontFamily: 'Lato-Regular',
   },
 });

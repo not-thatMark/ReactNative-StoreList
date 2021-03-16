@@ -7,18 +7,62 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:168998987500:android:5fa5e337c4b177a474a7c9",
+        "mobilesdk_app_id": "1:168998987500:android:c9c8e219a025316b74a7c9",
         "android_client_info": {
-          "package_name": "com.init"
+          "package_name": "com.fairfoodie2"
         }
       },
       "oauth_client": [
         {
-          "client_id": "168998987500-tbqfjke7kiqr4j4m4a5s7iusrk6kq6e3.apps.googleusercontent.com",
+          "client_id": "168998987500-3i6j9tq5pg1asc6rmdvale8eaiipcffv.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.init",
-            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+            "package_name": "com.fairfoodie2",
+            "certificate_hash": "6fd54185703afe35063beb596ad5e5edd1d4f089"
+          }
+        },
+        {
+          "client_id": "168998987500-lkrl1h8laft5rnqr97tn1r6gd4dnj43d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqiiI-GT5TPZS3_kb-9MCADNFk_YkK5Go"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "168998987500-4opbemod2p64duqsh4smg9hm09erqvr6.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "168998987500-2s2h3ei9hl59buhsp4nrnl3n8jbj3m94.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.init"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:168998987500:android:37e0d00a6fbefe9574a7c9",
+        "android_client_info": {
+          "package_name": "com.fairfoodie3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "168998987500-6d8uqtjil54fmrkcftk4igfsmsf0qpbq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fairfoodie3",
+            "certificate_hash": "6fd54185703afe35063beb596ad5e5edd1d4f089"
           }
         },
         {

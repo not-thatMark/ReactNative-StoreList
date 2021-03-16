@@ -15,7 +15,7 @@ import {
   Interaction,
   InteractionText,
   Divider,
-} from '../styles/FeedStyles';
+} from '../styles/FeedStyles.js';
 
 import ProgressiveImage from './ProgressiveImage';
 
